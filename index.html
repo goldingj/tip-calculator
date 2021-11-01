@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href = "styles.css" rel = "stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <img class = "logo" src = "file:///C:/Users/jgold/AppData/Local/Temp/Temp1_tip-calculator-app-main.zip/tip-calculator-app-main/images/logo.svg" alt = "logo">
+        
+        <section class = "calculator">
+            <div class = "left-div">
+            <label for  = "bill-amount">Bill</label>
+            <br>
+            <input class = "bill" type = "text" id = "bill-amount" name = "bill-amount" required>
+                <br>
+            <p>Select Tip %</p>
+            <br>
+            <div class = "top-buttons">
+            <button id = "five" value = .05>5%</button>
+            <button id = "ten" value = .10>10%</button>
+            <button id = "fifteen" value = .15>15%</button>
+            </div>
+            <div class = "bottom-buttons">
+            <button id = "twenty-five" value = .25>25%</button>
+            <button id = "fifty" value = .5>50%</button>
+            <button id = "custom">Custom</button>
+            </div>
+            <br>
+            
+
+            <label for = "party-amount">Number of People</label>
+            <br>
+            <input class = "party" type = "text" id = "party-amount" name = "party-amount" required>
+        </div>
+            <div class = "answer">
+                <div class = "tip-amount">
+                <div class = tip-amount-text>
+                <div class = "answer-title">Tip Amount</div>
+                <div class = "answer-label">/person</div>
+                </div>
+                <div class = "answer-amount" id = "tip-answer">$0.00</div>
+                </div>
+
+                <div class = "total">
+                <div>
+                <div class = "answer-title">Total</div>
+                <div class = "answer-label">/person</div>
+                </div>
+                <div class = "answer-amount" id = "total-answer">$0.00</div>
+                </div>
+
+                <div>
+                    <button class = "reset-button">Reset</button>
+                </div>
+                
+            </div>
+
+        </section>
+
+        
+    </body>
+    <script src = "index.js"></script>
+</html>
