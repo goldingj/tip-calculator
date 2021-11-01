@@ -1,0 +1,127 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono";
+    font-size: 24px;
+    
+}
+
+p{
+    display:inline-block;
+}
+
+.logo{
+    position: relative;
+    margin-left: 550px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.calculator{
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 17px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-around;
+    /*width: 75%;*/
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+
+button{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-family: "Space Mono";
+    border-radius: 10px;
+    padding: 8px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.top-buttons{
+    margin-bottom: 10px;
+    
+}
+
+input{
+    background-color:hsl(189, 41%, 97%);
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.bill{
+    background-image: url("file:///C:/Users/jgold/AppData/Local/Temp/Temp1_tip-calculator-app-main.zip/tip-calculator-app-main/images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+}
+
+.party{
+    background-image: url("file:///C:/Users/jgold/AppData/Local/Temp/Temp1_tip-calculator-app-main.zip/tip-calculator-app-main/images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 40px;
+}
+
+.answer{
+    background-color: hsl(183, 100%, 15%);
+    width: 275px;
+    color: white;
+    border-radius: 10px;
+    padding-top: 32px;
+    padding-left: 35px;
+    padding-right:44px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 28px;
+}
+
+.answer-label{
+    color:hsl(172, 67%, 45%);
+    font-size: 18px;
+}
+
+.answer-amount{
+    color: hsl(172, 67%, 45%);
+}
+
+.answer-title{
+    font-size: 18px;
+}
+
+
+
+.tip-amount{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.reset-button{
+    background-color: hsl(172, 67%, 45%);
+    margin-left: 50px;
+    margin-bottom: 15px;
+    padding: 8px 80px;
+}
+
+button:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
+input:hover{
+    border-color: hsl(172, 67%, 45%);
+}
