@@ -11,6 +11,8 @@ var customPercent = document.getElementById("custom");
 var tipTotal = document.getElementById("tip-answer");
 var showTotal = document.getElementById("total-answer");
 
+const resetButton = document.getElementById("reset-button");
+
 CurrentTipPercent = 0;
 
 function parseNumber(num) {
@@ -18,6 +20,7 @@ function parseNumber(num) {
   num = Math.round(num * 100);
   return num / 100;
 }
+
 function getBill() {
   return parseNumber(billAmountInput.value);
 }
@@ -64,7 +67,7 @@ function update() {
   console.log(tipPerPerson);
   tipTotal.textContent = formatDollar(parseNumber(tipPerPerson));
   showTotal.textContent = formatDollar(
-    parseNumber(billamount) + parseNumber(tipPerPerson * numPeople)
+    parseNumber(billamount / numPeople) //+ parseNumber(tipPerPerson * numPeople)
   );
 }
 
@@ -92,3 +95,12 @@ fiftyPercent.addEventListener("click", function () {
 });
 
 billAmountInput.addEventListener("blur", update);
+
+
+
+resetButton.addEventListener("click", function () {
+  billAmountInput.value = 0;
+  numberOfPeople.value = 1;
+  tipTotal.textContent = `$0.00`;
+  showTotal.textContent = `$0.00`;
+});
