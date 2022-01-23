@@ -58,14 +58,14 @@ input{
 }
 
 .bill{
-    background-image: url("file:///C:/Users/jgold/AppData/Local/Temp/Temp1_tip-calculator-app-main%20(1).zip/tip-calculator-app-main/images/icon-dollar.svg");
+    background-image: url("images/icon-dollar.svg");
     background-repeat: no-repeat;
     background-position: left center;
     
 }
 
 .party{
-    background-image: url("file:///C:/Users/jgold/AppData/Local/Temp/Temp1_tip-calculator-app-main%20(1).zip/tip-calculator-app-main/images/icon-person.svg");
+    background-image: url("icon-person.svg");
     background-repeat: no-repeat;
     background-position: left center;
     height: 40px;
